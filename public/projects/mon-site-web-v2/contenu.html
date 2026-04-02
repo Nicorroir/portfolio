@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- Document HTML5 -->
+<html lang="fr"> <!-- Langue du document : français -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Encodage pour les caractères accentués -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive pour mobile -->
+  <title>Contenu</title> <!-- Titre affiché dans l’onglet -->
+
+  <link rel="stylesheet" href="css/styles.css"> <!-- Feuille de style principale -->
+  <script src="script/script_horloge.js" defer></script> <!-- Script horloge (chargé après le HTML) -->
+</head>
+
+<!-- Corps de la page avec la classe "contenu" pour appliquer le fond spécifique -->
+<body class="contenu">
+
+  <header>
+    <h1>MON SITE WEB</h1> <!-- Titre principal -->
+  </header>
+
+  <nav> <!-- Menu de navigation horizontal -->
+    <table align="center" cellpadding="10"> <!-- Tableau centré avec des liens dans les cellules -->
+      <tr>
+        <td><a href="index.html">Accueil</a></td> <!-- Lien vers cette page -->
+        <td><a href="contenu.html">Contenu</a></td> <!-- Lien vers la page contenu -->
+        <td><a href="contact.html">Contact</a></td> <!-- Lien vers la page contact -->
+        <td><a href="images.html">Images</a></td> <!-- Lien vers la galerie -->
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Horloge affichée sous le menu -->
+  <div id="horloge" style="text-align: center; margin-top: 5px; font-size: 14px; color: white;">
+    Heure : <span id="heure-belgique">Chargement...</span>
+  </div>
+
+  <section style="padding: 20px; text-align: center;">
+    <h2>Univers Mangas</h2>
+    <p>Voici quelques liens vers des sites ou encyclopédies en rapport avec mes mangas préférés :</p>
+
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="margin: 15px 0;">
+        <a href="https://onepiece.fandom.com/fr/wiki/One_Piece_Wiki" target="_blank">
+          One Piece - Fandom FR
+        </a>
+      </li>
+      <li style="margin: 15px 0;">
+        <a href="https://naruto.fandom.com/fr/wiki/Wiki_Naruto" target="_blank">
+          Naruto - Fandom FR
+        </a>
+      </li>
+      <li style="margin: 15px 0;">
+        <a href="https://www.kimetsu-no-yaiba.fr/" target="_blank">
+          Demon Slayer - Site FR
+        </a>
+      </li>
+      <li style="margin: 15px 0;">
+        <a href="https://www.dragonballsuper-france.fr/" target="_blank">
+          Dragon Ball Super - Site FR
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>

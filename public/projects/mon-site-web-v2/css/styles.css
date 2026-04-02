@@ -1,0 +1,194 @@
+/* === STYLES GÉNÉRAUX POUR TOUT LE SITE === */
+
+html, body {
+    height: 100%; /* Force html et body à occuper toute la hauteur de la fenêtre */
+}
+
+body {
+    background-color: #010161; /* Applique un fond bleu foncé à tout le site */
+    color: white; /* Couleur du texte par défaut (blanc) */
+    font-family: Arial, sans-serif; /* Police du texte */
+    margin: 0; /* Supprime la marge extérieure du body */
+    padding: 0; /* Supprime le padding intérieur du body */
+}
+
+/* Titre h1 à h6 : centrés et blancs */
+h1 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: white; /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+h2 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: rgb(99, 70, 70); /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+h3 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: white; /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+h4 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: white; /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+h5 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: white; /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+h6 {
+    text-align: center; /* Centre tous les titres horizontalement */
+    color: white; /* Définit la couleur du texte en blanc */
+    margin: 20px 0; /* Espace vertical autour des titres (haut et bas) */
+}
+
+/* Paragraphes */
+p {
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 18px; /* Taille du texte des paragraphes */
+    color: rgb(146, 145, 0); /* Couleur or */
+}
+
+/* Liens généraux */
+a {
+    color: rgb(0, 147, 206); /* bleu */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Met en gras */
+}
+
+/* Effet au survol d’un lien */
+a:hover {
+    color: white; /* Change la couleur du lien en blanc au survol */
+}
+
+/* Menu principal (tableau dans la balise <nav>) */
+nav table {
+    background-color: #000080; /* Bleu foncé pour le fond du menu */
+    border-radius: 10px; /* Bords arrondis */
+    margin: 20px auto; /* Centre le menu horizontalement avec une marge verticale */
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Cellules du menu */
+nav td {
+    padding: 5px 15px; /* Espacement intérieur des liens dans le menu */
+}
+
+/* Style des flocons (dans index.html uniquement) */
+.snowflake {
+    color: white; /* Couleur du flocon */
+    font-size: 20px; /* Taille de base du flocon (variable ensuite via JS) */
+    text-shadow: 0 0 5px white; /* Lueur autour des flocons pour les rendre visibles */
+}
+
+/* Horloge visible sur chaque page */
+#heure-belgique {
+    text-align: center; /* Centre l'heure */
+    color: white; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+    margin-top: 5px; /* Espace au-dessus de l'horloge */
+}
+
+/* Formulaire de la page contact */
+form {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
+    padding: 30px; /* Espace intérieur autour du contenu */
+    border-radius: 10px; /* Bords arrondis */
+    max-width: 700px; /* Largeur maximale du formulaire */
+    margin: 30px auto; /* Centre le formulaire horizontalement avec une marge verticale */
+    color: white; /* Texte blanc */
+    font-size: 16px; /* Taille du texte dans les champs */
+}
+
+/* Champs du formulaire */
+form input,
+form select,
+form textarea {
+    width: 100%; /* Prend toute la largeur du formulaire */
+    padding: 10px; /* Espace intérieur */
+    margin-bottom: 15px; /* Espace entre les champs */
+    border-radius: 5px; /* Bords arrondis */
+    border: none; /* Supprime la bordure par défaut */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Libellés (labels) du formulaire */
+form label {
+    font-weight: bold; /* Met les labels en gras */
+}
+
+/* === GALERIE D’IMAGES === */
+
+.galerie {
+    display: grid; /* Utilise le système de grille CSS */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonnes automatiques avec minimum 250px */
+    gap: 20px; /* Espacement entre les blocs */
+    max-width: 1200px; /* Largeur maximale de la galerie */
+    margin: auto; /* Centre la galerie horizontalement */
+    padding: 20px; /* Espace intérieur autour des images */
+}
+
+/* Images dans la galerie */
+.galerie img {
+    width: 100%; /* Image prend toute la largeur du conteneur */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px #000; /* Ombre noire autour de l’image */
+}
+
+/* Légende sous les images */
+.galerie figcaption {
+    margin-top: 5px; /* Petit espace au-dessus du texte */
+    font-size: 14px; /* Taille du texte de la légende */
+    color: #ccc; /* Gris clair pour contraste */
+    text-align: center; /* Centré sous l’image */
+}
+/* === FONDS SPÉCIFIQUES POUR CHAQUE PAGE === */
+
+/* Fond pour la page d’accueil (index.html) */
+body.accueil {
+    background-image: url("../images/fond_one_piece_001.jpeg"); /* Définit une image de fond spécifique pour l’accueil */
+    background-size: cover;        /* L’image est agrandie/réduite pour couvrir toute la zone visible */
+    background-position: center;   /* Centre l’image horizontalement et verticalement */
+    background-repeat: no-repeat;  /* Empêche l’image de se répéter si elle est plus petite que l’écran */
+}
+
+/* Fond pour la page contenu (contenu.html) */
+body.contenu {
+    background-image: url("../images/fond_one_piece_002.jpeg"); /* Image de fond différente pour la page contenu */
+    background-size: cover;        /* L’image s’adapte à la taille de l’écran */
+    background-position: center;   /* Centre le visuel dans la fenêtre */
+    background-repeat: no-repeat;  /* Pas de répétition du motif */
+}
+
+/* Fond pour la page contact (contact.html) */
+body.contact {
+    background-image: url("../images/fond_one_piece_003.jpeg"); /* Fond unique pour la page contact */
+    background-size: cover;        /* Couvre toute la surface de la page */
+    background-position: center;   /* Centre l’image de fond */
+    background-repeat: no-repeat;  /* Ne répète pas l’image si elle est plus petite */
+}
+
+/* === POPUP IMAGE AGRANDIE === */
+
+.popup-image {
+    position: fixed; /* Reste fixe à l’écran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent noir */
+    display: none; /* Masqué par défaut */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    z-index: 9999; /* Tout au-dessus */
+    cursor: pointer; /* Curseur pour indiquer qu’on peut fermer */
+}
+
+.popup-image img {
+    max-width: 90%; /* Limite la taille de l’image agrandie */
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white; /* Lueur autour de l’image */
+}

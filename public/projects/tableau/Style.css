@@ -1,0 +1,25 @@
+table, th, td
+{
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+th ,td
+{
+    padding: 0.25em;
+}
+td[title]
+{
+    font-style: italic;
+    padding-left: 1.25mm;
+}
+table.nom_prix_quantite td:not(:first-child), table.nom_prix_quantite tfoot th:not(:first-child)
+{
+    text-align: right;
+}
+iframe
+{
+    width: 100%;
+    min-height: 15em;
+}

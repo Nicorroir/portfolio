@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Indique que ce document est au format HTML5 -->
+<html lang="fr"> <!-- Spécifie que la langue principale est le français -->
+
+<head> <!-- Début de la section d’en-tête -->
+  <meta charset="UTF-8"> <!-- Définit l'encodage des caractères (UTF-8 pour gérer les accents) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet un affichage responsive -->
+  <title>Accueil</title> <!-- Titre affiché dans l’onglet du navigateur -->
+
+  <!-- Feuille de style principale du site -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- Applique les styles globaux à toutes les pages -->
+
+  <!-- Feuille de style contenant uniquement l’animation des flocons -->
+  <link rel="stylesheet" href="css/animations.css"> <!-- Spécifique à la page d’accueil -->
+
+  <!-- Script JavaScript qui génère les flocons de neige -->
+  <!--<script src="script/script_flocons.js" defer></script>--> <!-- Flocons animés, chargés après le HTML (mis en pause pour le moment parce que il dois etre encore rectifier) -->
+
+  <!-- Script JavaScript pour l’horloge -->
+  <script src="script/script_horloge.js" defer></script> <!-- Affiche l’heure, chargé aussi après le HTML -->
+</head>
+
+<!-- Corps de la page avec classe CSS spécifique pour appliquer un fond différent -->
+<body class="accueil">
+
+  <!-- Conteneur invisible pour générer dynamiquement les flocons -->
+  <div class="snowfall-container"></div> <!-- Ce bloc est utilisé par le script pour afficher ❄ -->
+
+  <header> <!-- Début de l’en-tête -->
+    <h1>MON SITE WEB</h1> <!-- Titre principal du site -->
+  </header>
+
+  <nav> <!-- Menu de navigation horizontal -->
+    <table align="center" cellpadding="10"> <!-- Tableau centré avec des liens dans les cellules -->
+      <tr>
+        <td><a href="index.html">Accueil</a></td> <!-- Lien vers cette page -->
+        <td><a href="contenu.html">Contenu</a></td> <!-- Lien vers la page contenu -->
+        <td><a href="contact.html">Contact</a></td> <!-- Lien vers la page contact -->
+        <td><a href="images.html">Images</a></td> <!-- Lien vers la galerie -->
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Horloge affichée juste sous le menu -->
+  <div id="horloge" style="text-align: center; margin-top: 5px; font-size: 14px; color: white;">
+    Heure : <span id="heure-belgique">Chargement...</span> <!-- Mise à jour toutes les secondes par le script -->
+  </div>
+
+  <section style="text-align: center; padding: 20px;"> <!-- Section contenant le message d’accueil -->
+    <h2>Accueil</h2> <!-- Titre de la section -->
+    <p>Bienvenue sur mon site où je m’amuse un peu avec plusieurs langages de codes différents, vous trouverez des images de mangas, des animations, des formulaires et des contenus.<br>
+       principalement de <strong>One Piece</strong> car je suis un grand fan !</p> <!-- Message d’introduction -->
+  </section>
+
+</body> <!-- Fin du corps de la page -->
+
+</html> <!-- Fin du document HTML -->

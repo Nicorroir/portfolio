@@ -1,0 +1,38 @@
+/* Conteneur global utilisé pour contenir les flocons */
+.snowfall-container {
+    position: fixed; /* Le conteneur reste fixé à l’écran, même en scrollant */
+    top: 0; /* Placé tout en haut */
+    left: 0; /* Placé à gauche */
+    width: 100%; /* Prend toute la largeur de l’écran */
+    height: 100%; /* Prend toute la hauteur de l’écran */
+    pointer-events: none; /* Permet de cliquer à travers les flocons (évite qu’ils bloquent des boutons) */
+    z-index: 9999; /* Placé au-dessus de tous les autres éléments */
+}
+
+/* Style des flocons générés par JavaScript */
+.snowflake {
+    position: absolute; /* Chaque flocon est positionné librement sur la page */
+    top: -30px; /* Commence au-dessus de l’écran pour tomber */
+    animation-name: fall-diagonal; /* Utilise l’animation définie plus bas */
+    animation-timing-function: linear; /* Animation à vitesse constante */
+    animation-iteration-count: 3; /* Ne boucle pas : le flocon tombe une seule fois */
+}
+
+/* Définition de l’animation “fall” */
+@keyframes fall {
+    0% {
+        transform: translateY(0); /* Position de départ : haut de l’écran */
+    }
+    100% {
+        transform: translateY(100vh); /* Position finale : tout en bas (100% de la hauteur visible) */
+    }
+}
+/* Animation : chute en diagonale vers le bas */
+@keyframes fall-diagonal {
+    0% {
+        transform: translateX(0) translateY(0);            /* Départ en haut */
+    }
+    100% {
+        transform: translateX(100px) translateY(100vh);    /* Tombe vers le bas avec un déplacement horizontal */
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- Indique que ce document est un fichier HTML5 -->
+<html lang="fr"> <!-- Définit que la langue principale du document est le français -->
+
+<head> <!-- Début de l’en-tête -->
+  <meta charset="UTF-8"> <!-- Spécifie l'encodage des caractères en UTF-8 (gère les accents) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive (adaptatif à l’écran) -->
+  <title>Images</title> <!-- Titre affiché dans l’onglet du navigateur -->
+
+  <link rel="stylesheet" href="css/styles.css"> <!-- Lien vers la feuille de style principale -->
+  <script src="script/script_horloge.js" defer></script> <!-- Script horloge chargé après le HTML -->
+  <script src="script/script_image_popup.js" defer></script> <!-- Script image popup chargé après le HTML -->
+
+</head>
+
+<body> <!-- Début du corps du document -->
+
+  <header> <!-- En-tête du site -->
+    <h1>MON SITE WEB</h1> <!-- Titre principal du site -->
+  </header>
+
+  <nav> <!-- Menu de navigation horizontal -->
+    <table align="center" cellpadding="10"> <!-- Tableau centré avec des liens dans les cellules -->
+      <tr>
+        <td><a href="index.html">Accueil</a></td> <!-- Lien vers cette page -->
+        <td><a href="contenu.html">Contenu</a></td> <!-- Lien vers la page contenu -->
+        <td><a href="contact.html">Contact</a></td> <!-- Lien vers la page contact -->
+        <td><a href="images.html">Images</a></td> <!-- Lien vers la galerie -->
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Horloge visible sous le menu -->
+  <div id="horloge" style="text-align: center; margin-top: 5px; font-size: 14px; color: white;">
+    Heure : <span id="heure-belgique">Chargement...</span> <!-- L'heure sera insérée ici par JavaScript -->
+  </div>
+
+  <section style="padding: 20px;"> <!-- Section contenant la galerie -->
+    <h2 style="text-align: center;">Galerie de mes mangas préférés</h2> <!-- Titre de la galerie -->
+
+    <div class="galerie"> <!-- Conteneur de la galerie d’images (mis en forme en CSS avec Grid) -->
+
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece01.png" alt="One Piece"> <!-- Image 1 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_002.jpg" alt="One Piece"> <!-- Image 1 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_003.jpg" alt="One Piece"> <!-- Image 2 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_004.jpg" alt="One Piece"> <!-- Image 3 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_005.jpg" alt="One Piece"> <!-- Image 4 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_006.jpg" alt="One Piece"> <!-- Image 5 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_007.jpeg" alt="One Piece"> <!-- Image 6 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+      <figure> <!-- Bloc image + légende -->
+        <img src="images/one_piece_008.jpg" alt="One Piece"> <!-- Image 7 -->
+        <figcaption>One Piece</figcaption> <!-- Légende associée -->
+      </figure>
+
+      <figure>
+        <img src="images/dragonball_001.jpg" alt="Dragon Ball"> <!-- Image 8 -->
+        <figcaption>Dragon Ball</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dragonball_002.jpg" alt="Dragon Ball"> <!-- Image 9 -->
+        <figcaption>Dragon Ball</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dragonball_003.jpg" alt="Dragon Ball"> <!-- Image 10 -->
+        <figcaption>Dragon Ball</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dragonball_004.jpg" alt="Dragon Ball"> <!-- Image 11 -->
+        <figcaption>Dragon Ball</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dragonball_005.webp" alt="Dragon Ball"> <!-- Image 12 -->
+        <figcaption>Dragon Ball</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/mickey.jpg" alt="Mickey"> <!-- Image 13 -->
+        <figcaption>Hors thème</figcaption>
+      </figure>
+
+    </div> <!-- Fin de la galerie -->
+
+  </section> <!-- Fin de la section principale -->
+
+  <!-- Conteneur pour l’image agrandie -->
+<div id="popup-image" class="popup-image" onclick="fermerPopup()">
+  <img src="" alt="Image agrandie">
+</div>
+
+
+</body> <!-- Fin du corps de la page -->
+
+</html> <!-- Fin du document HTML -->

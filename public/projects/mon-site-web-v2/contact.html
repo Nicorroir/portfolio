@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Déclaration HTML5 -->
+<html lang="fr"> <!-- Définit la langue du document en français -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Encodage UTF-8 (nécessaire pour les accents) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Affichage adaptatif pour mobile/tablette -->
+  <title>Contact</title> <!-- Titre de la page affiché dans l’onglet du navigateur -->
+
+  <link rel="stylesheet" href="css/styles.css"> <!-- Lien vers la feuille de style principale -->
+  <script src="script/script_horloge.js" defer></script> <!-- Script de l’horloge (chargé après le HTML) -->
+</head>
+
+<!-- Corps avec classe spécifique pour appliquer un fond différent -->
+<body class="contact">
+
+  <header> <!-- En-tête du site -->
+    <h1>MON SITE WEB</h1> <!-- Titre principal visible sur toutes les pages -->
+  </header>
+
+  <nav> <!-- Menu de navigation horizontal -->
+    <table align="center" cellpadding="10"> <!-- Tableau centré avec des liens dans les cellules -->
+      <tr>
+        <td><a href="index.html">Accueil</a></td> <!-- Lien vers cette page -->
+        <td><a href="contenu.html">Contenu</a></td> <!-- Lien vers la page contenu -->
+        <td><a href="contact.html">Contact</a></td> <!-- Lien vers la page contact -->
+        <td><a href="images.html">Images</a></td> <!-- Lien vers la galerie -->
+      </tr>
+    </table>
+  </nav>
+
+  <!-- Horloge qui s’affiche sous le menu -->
+  <div id="horloge" style="text-align: center; margin-top: 5px; font-size: 14px; color: white;">
+    Heure : <span id="heure-belgique">Chargement...</span>
+  </div>
+
+  <!-- Section principale contenant le formulaire -->
+  <section style="padding: 20px;">
+    <h2 style="text-align: center;">Demande de renseignements</h2>
+
+    <form method="post" action="php/formego.php"> <!-- Début du formulaire, envoi vers le fichier PHP (pas encore terminer) -->
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="adresse">Adresse :</label>
+      <textarea id="adresse" name="adresse" rows="3"></textarea>
+
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone">
+
+      <label for="fax">Fax :</label>
+      <input type="text" id="fax" name="fax">
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cours">Formation recherchée :</label>
+      <select id="cours" name="cours">
+        <option value="Informatique">Informatique</option>
+        <option value="Langue">Langue</option>
+        <option value="Habillement">Habillement</option>
+      </select>
+
+      <label for="horaire">Horaire souhaité :</label>
+      <select id="horaire" name="horaire">
+        <option value="Jour">Cours du jour</option>
+        <option value="Soir">Cours du soir</option>
+        <option value="Tous">Jour et soir</option>
+      </select>
+
+      <label>Niveau d'études :</label><br>
+      <input type="checkbox" name="niveau[]" value="esi"> Enseignement secondaire inférieur<br>
+      <input type="checkbox" name="niveau[]" value="ess"> Enseignement secondaire supérieur<br>
+      <input type="checkbox" name="niveau[]" value="es"> Enseignement supérieur<br><br>
+
+      <label>Situation professionnelle :</label><br>
+      <input type="radio" name="profession" value="employé"> Employé<br>
+      <input type="radio" name="profession" value="chomeur"> Chômeur<br>
+      <input type="radio" name="profession" value="autre"> Autre<br><br>
+
+      <div style="text-align: center;"> <!-- Centre les boutons -->
+        <input type="submit" value="Envoyer"> <!-- Envoie les données du formulaire -->
+        <input type="reset" value="Annuler"> <!-- Réinitialise tous les champs -->
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>
