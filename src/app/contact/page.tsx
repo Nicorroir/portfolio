@@ -11,7 +11,7 @@ export default function ContactPage() {
     // Ouvre le client mail avec les données pré-remplies
     const subject = encodeURIComponent(`Portfolio — Message de ${form.nom}`);
     const body = encodeURIComponent(`Nom : ${form.nom}\nEmail : ${form.email}\n\n${form.message}`);
-    window.location.href = `mailto:nicolas.terroir@student.helb.be?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:nicolas.terroir@hainaut-ea.be?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -48,8 +48,10 @@ export default function ContactPage() {
 
           {[
             { label: "Étudiant", value: "Bachelier en Informatique", color: "#00ff41" },
-            { label: "École", value: "HELB — Bruxelles", color: "#00ffff" },
-            { label: "Email", value: "nicolas.terroir@student.helb.be", color: "#00ff41", isEmail: true },
+            { label: "École", value: "IPAMC — Écaussines", color: "#00ffff" },
+            { label: "Email école", value: "nicolas.terroir@hainaut-ea.be", color: "#00ff41", isEmail: true },
+            { label: "Email perso", value: "Primo-nt@hotmail.com", color: "#00ff41", isEmail: true },
+            { label: "Email perso 2", value: "nterroir@gmail.com", color: "#00ff41", isEmail: true },
             { label: "GitHub", value: "github.com/Nicorroir", color: "#bf00ff", isLink: "https://github.com/Nicorroir" },
           ].map(({ label, value, color, isEmail, isLink }) => (
             <div key={label} style={{ borderLeft: `2px solid ${color}44`, paddingLeft: "0.75rem" }}>
@@ -77,7 +79,7 @@ export default function ContactPage() {
             </span>
           </div>
           <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.75rem", color: "#00ff4199", lineHeight: 1.7, margin: 0 }}>
-            Étudiant en bachelier informatique, ouvert aux stages, projets collaboratifs et opportunités professionnelles.
+            Étudiant en bachelier informatique à l&apos;IPAMC (Écaussines), ouvert aux stages, projets collaboratifs et opportunités professionnelles.
           </p>
           <div style={{ marginTop: "auto" }}>
             {["Stage", "Projet collaboratif", "Freelance"].map((tag) => (
