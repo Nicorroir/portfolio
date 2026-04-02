@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   title: "Nicolas Terroir — Portfolio",
   description:
     "Portfolio de Nicolas Terroir, étudiant en bachelier informatique. Projets en C#, C++, PHP, HTML/CSS et SQL.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
 };
 
 export default function RootLayout({
