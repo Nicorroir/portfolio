@@ -1,15 +1,16 @@
 "use client";
 
-import { useProjectStore } from "@/store/useProjectStore";
-import { Category, CATEGORY_ICONS } from "@/types/project";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const CATEGORIES = Object.values(Category);
+const LINKS = [
+  { href: "/",         label: "Accueil",  icon: "◈" },
+  { href: "/projects", label: "Projets",  icon: "⚡" },
+  { href: "/contact",  label: "Contact",  icon: "◉" },
+];
 
 export default function Navbar() {
-  const { activeCategory, setCategory, resetFilters, activeLanguages, searchQuery } = useProjectStore();
-
-  const hasActiveFilters =
-    activeCategory !== null || activeLanguages.length > 0 || searchQuery !== "";
+  const pathname = usePathname();
 
   return (
     <nav
@@ -31,12 +32,11 @@ export default function Navbar() {
           alignItems: "center",
           justifyContent: "space-between",
           height: "56px",
-          gap: "1rem",
         }}
       >
         {/* Logo */}
-        <button
-          onClick={resetFilters}
+        <Link
+          href="/"
           style={{
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "1rem",
@@ -44,63 +44,54 @@ export default function Navbar() {
             color: "#00ff41",
             textShadow: "0 0 10px #00ff41",
             letterSpacing: "0.15em",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
+            textDecoration: "none",
             whiteSpace: "nowrap",
           }}
         >
           &lt;PORTFOLIO /&gt;
-        </button>
+        </Link>
 
-        {/* Filtres catégories */}
-        <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-          {CATEGORIES.map((cat) => {
-            const isActive = activeCategory === cat;
+        {/* Liens */}
+        <div style={{ display: "flex", gap: "0.25rem" }}>
+          {LINKS.map(({ href, label, icon }) => {
+            const isActive = pathname === href;
             return (
-              <button
-                key={cat}
-                onClick={() => setCategory(isActive ? null : cat)}
+              <Link
+                key={href}
+                href={href}
                 style={{
                   fontFamily: '"Share Tech Mono", monospace',
-                  fontSize: "0.7rem",
-                  letterSpacing: "0.05em",
-                  padding: "0.25rem 0.6rem",
+                  fontSize: "0.8rem",
+                  letterSpacing: "0.08em",
+                  padding: "0.35rem 0.9rem",
                   background: isActive ? "#00ff4122" : "transparent",
-                  border: `1px solid ${isActive ? "#00ff41" : "#1a2332"}`,
-                  color: isActive ? "#00ff41" : "#00ff4166",
-                  cursor: "pointer",
-                  transition: "all 0.15s ease",
+                  border: `1px solid ${isActive ? "#00ff41" : "transparent"}`,
+                  color: isActive ? "#00ff41" : "#00ff4188",
+                  textDecoration: "none",
                   display: "flex",
                   alignItems: "center",
-                  gap: "0.3rem",
+                  gap: "0.35rem",
+                  transition: "all 0.15s ease",
+                }}
+                onMouseEnter={(e) => {
+                  if (!isActive) {
+                    e.currentTarget.style.color = "#00ff41";
+                    e.currentTarget.style.borderColor = "#00ff4144";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isActive) {
+                    e.currentTarget.style.color = "#00ff4188";
+                    e.currentTarget.style.borderColor = "transparent";
+                  }
                 }}
               >
-                <span>{CATEGORY_ICONS[cat]}</span>
-                <span>{cat}</span>
-              </button>
+                <span>{icon}</span>
+                <span>{label}</span>
+              </Link>
             );
           })}
         </div>
-
-        {/* Reset */}
-        {hasActiveFilters && (
-          <button
-            onClick={resetFilters}
-            style={{
-              fontFamily: '"Share Tech Mono", monospace',
-              fontSize: "0.7rem",
-              color: "#ff0040",
-              border: "1px solid #ff004066",
-              padding: "0.25rem 0.6rem",
-              background: "transparent",
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            ✕ reset
-          </button>
-        )}
       </div>
     </nav>
   );
