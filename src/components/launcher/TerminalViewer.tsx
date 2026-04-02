@@ -63,17 +63,17 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
           justifyContent: "space-between",
           padding: "0.4rem 0.75rem",
           background: "#0d1117",
-          borderBottom: "1px solid #1a2332",
+          borderBottom: "1px solid #21262d",
           flexShrink: 0,
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <div style={{ display: "flex", gap: "0.3rem" }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ff0040", display: "inline-block" }} />
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ffb300", display: "inline-block" }} />
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#00ff41", display: "inline-block" }} />
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#f85149", display: "inline-block" }} />
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#e3b341", display: "inline-block" }} />
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#58a6ff", display: "inline-block" }} />
           </div>
-          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4166" }}>
+          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff88" }}>
             {title}.exe
           </span>
         </div>
@@ -84,8 +84,8 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.65rem",
-            color: running ? "#00ff4144" : "#00ff41",
-            border: `1px solid ${running ? "#1a2332" : "#00ff4166"}`,
+            color: running ? "#58a6ff55" : "#58a6ff",
+            border: `1px solid ${running ? "#21262d" : "#58a6ff88"}`,
             padding: "0.15rem 0.5rem",
             background: "transparent",
             cursor: running ? "not-allowed" : "pointer",
@@ -100,7 +100,7 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
       <div
         style={{
           flex: 1,
-          background: "#0a0a0a",
+          background: "#0d1117",
           padding: "1rem",
           overflowY: "auto",
           minHeight: "400px",
@@ -110,7 +110,7 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
         }}
       >
         {lines.length === 0 && !running ? (
-          <div style={{ color: "#00ff4133", textAlign: "center", paddingTop: "4rem" }}>
+          <div style={{ color: "#58a6ff33", textAlign: "center", paddingTop: "4rem" }}>
             <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>▶</div>
             <div>Appuie sur &quot;▶ exécuter&quot; pour lancer la simulation</div>
           </div>
@@ -119,11 +119,11 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
             <div key={i} style={{ display: "flex", gap: "0.5rem" }}>
               {line.input ? (
                 <>
-                  <span style={{ color: "#00ff4144", userSelect: "none" }}>$</span>
-                  <span style={{ color: "#00ffff" }}>{line.text}</span>
+                  <span style={{ color: "#58a6ff55", userSelect: "none" }}>$</span>
+                  <span style={{ color: "#a371f7" }}>{line.text}</span>
                 </>
               ) : (
-                <span style={{ color: line.color ?? "#00ff41cc" }}>{line.text || "\u00A0"}</span>
+                <span style={{ color: line.color ?? "#58a6ffcc" }}>{line.text || "\u00A0"}</span>
               )}
             </div>
           ))
@@ -131,8 +131,8 @@ export default function TerminalViewer({ simulationKey, title }: TerminalViewerP
 
         {running && (
           <div style={{ display: "flex", gap: "0.5rem", marginTop: "0.25rem" }}>
-            <span style={{ color: "#00ff4144" }}>$</span>
-            <span style={{ color: "#00ff41", animation: "blink 1s step-end infinite" }}>▋</span>
+            <span style={{ color: "#58a6ff55" }}>$</span>
+            <span style={{ color: "#58a6ff", animation: "blink 1s step-end infinite" }}>▋</span>
           </div>
         )}
 

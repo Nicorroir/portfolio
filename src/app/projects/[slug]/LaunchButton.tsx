@@ -14,9 +14,9 @@ const LABELS: Record<LaunchMode, string> = {
 };
 
 const COLORS: Record<LaunchMode, string> = {
-  [LaunchMode.IFRAME]:   "#00ff41",
-  [LaunchMode.TERMINAL]: "#00ffff",
-  [LaunchMode.EXTERNAL]: "#bf00ff",
+  [LaunchMode.IFRAME]:   "#58a6ff",
+  [LaunchMode.TERMINAL]: "#a371f7",
+  [LaunchMode.EXTERNAL]: "#f78166",
 };
 
 export default function LaunchButton({ project }: LaunchButtonProps) {

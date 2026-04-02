@@ -14,7 +14,7 @@ export default function TypingEffect({
   lines,
   speed = 40,
   pauseBetween = 600,
-  color = "#00ff4199",
+  color = "#58a6ffbb",
   className = "",
 }: TypingEffectProps) {
   const [displayed, setDisplayed] = useState<string[]>([]);
@@ -65,10 +65,10 @@ export default function TypingEffect({
     >
       {lines.map((_, i) => (
         <div key={i}>
-          <span style={{ color: "#00ff4144" }}>$ </span>
+          <span style={{ color: "#58a6ff55" }}>$ </span>
           <span>{displayed[i] ?? ""}</span>
           {i === currentLine && (
-            <span style={{ opacity: showCursor ? 1 : 0, color: "#00ff41" }}>▋</span>
+            <span style={{ opacity: showCursor ? 1 : 0, color: "#58a6ff" }}>▋</span>
           )}
         </div>
       ))}

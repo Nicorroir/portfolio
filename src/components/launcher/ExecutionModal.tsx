@@ -61,8 +61,8 @@ export default function ExecutionModal() {
               inset: "1rem",
               zIndex: 101,
               background: "#0d1117",
-              border: "1px solid #1a2332",
-              boxShadow: "0 0 40px #00ff4122",
+              border: "1px solid #21262d",
+              boxShadow: "0 0 40px #58a6ff22",
               display: "flex",
               flexDirection: "column",
               maxWidth: "960px",
@@ -78,8 +78,8 @@ export default function ExecutionModal() {
                 alignItems: "center",
                 justifyContent: "space-between",
                 padding: "0.75rem 1rem",
-                borderBottom: "1px solid #1a2332",
-                background: "#0a0a0a",
+                borderBottom: "1px solid #21262d",
+                background: "#0d1117",
                 flexShrink: 0,
                 gap: "0.75rem",
               }}
@@ -91,7 +91,7 @@ export default function ExecutionModal() {
                     fontFamily: '"Orbitron", sans-serif',
                     fontSize: "0.9rem",
                     fontWeight: 700,
-                    color: "#00ff41",
+                    color: "#58a6ff",
                     margin: 0,
                   }}
                 >
@@ -118,8 +118,8 @@ export default function ExecutionModal() {
                 style={{
                   fontFamily: '"Share Tech Mono", monospace',
                   fontSize: "1rem",
-                  color: "#ff0040",
-                  border: "1px solid #ff004066",
+                  color: "#f85149",
+                  border: "1px solid #f8514966",
                   padding: "0.15rem 0.6rem",
                   background: "transparent",
                   cursor: "pointer",
@@ -127,7 +127,7 @@ export default function ExecutionModal() {
                   lineHeight: 1,
                   transition: "all 0.15s",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#ff004022"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#f8514922"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
                 title="Fermer (Échap)"
               >
@@ -139,10 +139,10 @@ export default function ExecutionModal() {
             <div
               style={{
                 padding: "0.6rem 1rem",
-                borderBottom: "1px solid #1a2332",
+                borderBottom: "1px solid #21262d",
                 fontFamily: '"Share Tech Mono", monospace',
                 fontSize: "0.75rem",
-                color: "#00ff4199",
+                color: "#58a6ffbb",
                 flexShrink: 0,
               }}
             >
@@ -169,17 +169,17 @@ export default function ExecutionModal() {
             <div
               style={{
                 padding: "0.4rem 1rem",
-                borderTop: "1px solid #1a2332",
+                borderTop: "1px solid #21262d",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
                 flexShrink: 0,
               }}
             >
-              <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#00ff4133" }}>
+              <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#58a6ff33" }}>
                 {project.sourceFolder}
               </span>
-              <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#00ff4133" }}>
+              <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#58a6ff33" }}>
                 ESC pour fermer
               </span>
             </div>

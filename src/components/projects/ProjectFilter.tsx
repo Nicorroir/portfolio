@@ -31,7 +31,7 @@ export default function ProjectFilter() {
             top: "50%",
             transform: "translateY(-50%)",
             fontFamily: '"Share Tech Mono", monospace',
-            color: "#00ff4166",
+            color: "#58a6ff88",
             fontSize: "0.85rem",
             pointerEvents: "none",
           }}
@@ -45,9 +45,9 @@ export default function ProjectFilter() {
           onChange={(e) => setSearchQuery(e.target.value)}
           style={{
             width: "100%",
-            background: "rgba(13,17,23,0.8)",
-            border: "1px solid #1a2332",
-            color: "#00ff41",
+            background: "rgba(22,27,34,0.8)",
+            border: "1px solid #21262d",
+            color: "#58a6ff",
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.85rem",
             padding: "0.6rem 0.75rem 0.6rem 2.5rem",
@@ -55,10 +55,10 @@ export default function ProjectFilter() {
             transition: "border-color 0.2s",
           }}
           onFocus={(e) =>
-            (e.target.style.borderColor = "#00ff41")
+            (e.target.style.borderColor = "#58a6ff")
           }
           onBlur={(e) =>
-            (e.target.style.borderColor = "#1a2332")
+            (e.target.style.borderColor = "#21262d")
           }
         />
       </div>
@@ -76,7 +76,7 @@ export default function ProjectFilter() {
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.7rem",
-            color: "#00ff4144",
+            color: "#58a6ff55",
             marginRight: "0.25rem",
           }}
         >
@@ -95,8 +95,8 @@ export default function ProjectFilter() {
                 fontSize: "0.7rem",
                 padding: "0.2rem 0.6rem",
                 background: isActive ? `${color}22` : "transparent",
-                border: `1px solid ${isActive ? color : "#1a2332"}`,
-                color: isActive ? color : "#00ff4144",
+                border: `1px solid ${isActive ? color : "#21262d"}`,
+                color: isActive ? color : "#58a6ff55",
                 cursor: "pointer",
                 transition: "all 0.15s ease",
               }}
@@ -112,10 +112,10 @@ export default function ProjectFilter() {
             marginLeft: "auto",
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.7rem",
-            color: "#00ff4166",
+            color: "#58a6ff88",
           }}
         >
-          <span style={{ color: "#00ff41" }}>{filtered.length}</span> résultat
+          <span style={{ color: "#58a6ff" }}>{filtered.length}</span> résultat
           {filtered.length !== 1 ? "s" : ""}
         </span>
       </div>

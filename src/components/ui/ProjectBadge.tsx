@@ -33,11 +33,11 @@ interface CategoryBadgeProps {
 }
 
 const CATEGORY_COLORS: Record<Category, string> = {
-  [Category.ALGORITHMIQUE]: "#00ff41",
-  [Category.MATHEMATIQUES]: "#00ffff",
-  [Category.POO]:           "#ff0040",
-  [Category.WEB]:           "#0080ff",
-  [Category.BASE_DONNEES]:  "#bf00ff",
+  [Category.ALGORITHMIQUE]: "#58a6ff",
+  [Category.MATHEMATIQUES]: "#a371f7",
+  [Category.POO]:           "#f85149",
+  [Category.WEB]:           "#79c0ff",
+  [Category.BASE_DONNEES]:  "#f78166",
 };
 
 export function CategoryBadge({ category }: CategoryBadgeProps) {

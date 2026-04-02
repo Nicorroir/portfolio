@@ -47,7 +47,7 @@ function Counter({ target, label, color }: { target: number; label: string; colo
         style={{
           fontFamily: '"Share Tech Mono", monospace',
           fontSize: "0.7rem",
-          color: "#00ff4166",
+          color: "#58a6ff88",
           letterSpacing: "0.1em",
           textTransform: "uppercase",
         }}
@@ -82,7 +82,7 @@ export default function HeroSection() {
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.8rem",
-            color: "#00ff4166",
+            color: "#58a6ff88",
             letterSpacing: "0.3em",
             textTransform: "uppercase",
           }}
@@ -95,8 +95,8 @@ export default function HeroSection() {
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "clamp(2rem, 6vw, 4rem)",
             fontWeight: 900,
-            color: "#00ff41",
-            textShadow: "0 0 20px #00ff41, 0 0 40px #00ff4166",
+            color: "#58a6ff",
+            textShadow: "0 0 20px #58a6ff, 0 0 40px #58a6ff88",
             letterSpacing: "0.1em",
             lineHeight: 1.1,
             margin: 0,
@@ -104,7 +104,7 @@ export default function HeroSection() {
         >
           NICOLAS
           <br />
-          <span style={{ color: "#00ffff", textShadow: "0 0 20px #00ffff" }}>
+          <span style={{ color: "#a371f7", textShadow: "0 0 20px #a371f7" }}>
             TERROIR
           </span>
         </h1>
@@ -113,7 +113,7 @@ export default function HeroSection() {
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.85rem",
-            color: "#00ff4199",
+            color: "#58a6ffbb",
             letterSpacing: "0.2em",
           }}
         >
@@ -124,8 +124,8 @@ export default function HeroSection() {
       {/* Terminal animé */}
       <div
         style={{
-          border: "1px solid #1a2332",
-          background: "rgba(13,17,23,0.8)",
+          border: "1px solid #21262d",
+          background: "rgba(22,27,34,0.8)",
           padding: "1rem 1.5rem",
           maxWidth: "480px",
           width: "100%",
@@ -137,14 +137,14 @@ export default function HeroSection() {
             display: "flex",
             gap: "0.4rem",
             marginBottom: "0.75rem",
-            borderBottom: "1px solid #1a2332",
+            borderBottom: "1px solid #21262d",
             paddingBottom: "0.5rem",
           }}
         >
-          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#ff0040", display: "inline-block" }} />
-          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#ffb300", display: "inline-block" }} />
-          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#00ff41", display: "inline-block" }} />
-          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#1a2332", marginLeft: "0.5rem" }}>
+          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#f85149", display: "inline-block" }} />
+          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#e3b341", display: "inline-block" }} />
+          <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#58a6ff", display: "inline-block" }} />
+          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#21262d", marginLeft: "0.5rem" }}>
             portfolio.exe
           </span>
         </div>
@@ -160,9 +160,9 @@ export default function HeroSection() {
           justifyContent: "center",
         }}
       >
-        <Counter target={nbProjects}   label="Projets"     color="#00ff41" />
-        <Counter target={nbCategories} label="Catégories"  color="#00ffff" />
-        <Counter target={nbLanguages}  label="Langages"    color="#bf00ff" />
+        <Counter target={nbProjects}   label="Projets"     color="#58a6ff" />
+        <Counter target={nbCategories} label="Catégories"  color="#a371f7" />
+        <Counter target={nbLanguages}  label="Langages"    color="#f78166" />
       </div>
 
       {/* Flèche scroll */}
@@ -170,7 +170,7 @@ export default function HeroSection() {
         style={{
           fontFamily: '"Share Tech Mono", monospace',
           fontSize: "0.75rem",
-          color: "#00ff4144",
+          color: "#58a6ff55",
           animation: "pulse-neon 2s ease-in-out infinite",
           letterSpacing: "0.2em",
         }}

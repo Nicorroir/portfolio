@@ -48,9 +48,9 @@ export default async function ProjectPage(
   };
 
   const LAUNCH_MODE_COLOR: Record<LaunchMode, string> = {
-    [LaunchMode.IFRAME]:    "#0080ff",
-    [LaunchMode.TERMINAL]:  "#00ffff",
-    [LaunchMode.EXTERNAL]:  "#bf00ff",
+    [LaunchMode.IFRAME]:    "#79c0ff",
+    [LaunchMode.TERMINAL]:  "#a371f7",
+    [LaunchMode.EXTERNAL]:  "#f78166",
   };
 
   return (
@@ -65,7 +65,7 @@ export default async function ProjectPage(
         {/* Catégorie + date */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
           <CategoryBadge category={project.category} />
-          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4144" }}>
+          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff55" }}>
             {formatDate(project.date)}
           </span>
         </div>
@@ -76,8 +76,8 @@ export default async function ProjectPage(
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
             fontWeight: 900,
-            color: "#00ff41",
-            textShadow: "0 0 20px #00ff4166",
+            color: "#58a6ff",
+            textShadow: "0 0 20px #58a6ff88",
             margin: 0,
             lineHeight: 1.2,
           }}
@@ -110,28 +110,28 @@ export default async function ProjectPage(
       </div>
 
       {/* Séparateur */}
-      <div style={{ height: "1px", background: "#1a2332", marginBottom: "2rem" }} />
+      <div style={{ height: "1px", background: "#21262d", marginBottom: "2rem" }} />
 
       {/* Description */}
       <div
         style={{
-          background: "rgba(13,17,23,0.8)",
-          border: "1px solid #1a2332",
+          background: "rgba(22,27,34,0.8)",
+          border: "1px solid #21262d",
           padding: "1.5rem",
           marginBottom: "2rem",
         }}
       >
-        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4144", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
+        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff55", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
           // DESCRIPTION
         </div>
-        <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.875rem", color: "#00ff41cc", lineHeight: 1.8, margin: 0 }}>
+        <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.875rem", color: "#58a6ffcc", lineHeight: 1.8, margin: 0 }}>
           {project.longDescription ?? project.description}
         </p>
       </div>
 
       {/* Tags */}
       <div style={{ marginBottom: "2rem" }}>
-        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4144", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
+        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff55", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
           // TAGS
         </div>
         <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
@@ -141,8 +141,8 @@ export default async function ProjectPage(
               style={{
                 fontFamily: '"Share Tech Mono", monospace',
                 fontSize: "0.7rem",
-                color: "#00ff4166",
-                border: "1px solid #1a2332",
+                color: "#58a6ff88",
+                border: "1px solid #21262d",
                 padding: "0.15rem 0.5rem",
               }}
             >
@@ -154,7 +154,7 @@ export default async function ProjectPage(
 
       {/* Langages détail */}
       <div style={{ marginBottom: "2rem" }}>
-        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4144", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
+        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff55", marginBottom: "0.75rem", letterSpacing: "0.15em" }}>
           // TECHNOLOGIES
         </div>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -171,10 +171,10 @@ export default async function ProjectPage(
 
       {/* Source */}
       <div style={{ marginBottom: "2.5rem" }}>
-        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#00ff4144", marginBottom: "0.5rem", letterSpacing: "0.15em" }}>
+        <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: "#58a6ff55", marginBottom: "0.5rem", letterSpacing: "0.15em" }}>
           // SOURCE
         </div>
-        <code style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.75rem", color: "#00ff4166" }}>
+        <code style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.75rem", color: "#58a6ff88" }}>
           📁 {project.sourceFolder}
         </code>
       </div>

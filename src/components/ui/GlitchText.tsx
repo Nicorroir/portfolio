@@ -13,7 +13,7 @@ export default function GlitchText({
   children,
   as: Tag = "span",
   className = "",
-  color = "#00ff41",
+  color = "#58a6ff",
 }: GlitchTextProps) {
   const text = typeof children === "string" ? children : "";
 
@@ -33,13 +33,13 @@ export default function GlitchText({
           background: transparent;
         }
         .glitch-wrapper::before {
-          color: #00ffff;
+          color: #a371f7;
           clip-path: inset(20% 0 60% 0);
           transform: translate(-2px, 0);
           animation: glitch-before 3s infinite linear;
         }
         .glitch-wrapper::after {
-          color: #ff0040;
+          color: #f85149;
           clip-path: inset(60% 0 20% 0);
           transform: translate(2px, 0);
           animation: glitch-after 3s infinite linear;

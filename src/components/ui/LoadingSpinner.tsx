@@ -9,7 +9,7 @@ interface LoadingSpinnerProps {
 
 export default function LoadingSpinner({
   size = 10,
-  color = "#00ff41",
+  color = "#58a6ff",
 }: LoadingSpinnerProps) {
   const [progress, setProgress] = useState(0);
 

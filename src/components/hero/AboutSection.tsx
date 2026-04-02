@@ -8,9 +8,9 @@ const PARCOURS = [
     lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6242-bac-en-informatique-nouvelle-formule-2.html",
     desc: "2ème année du bachelier en informatique. Approfondissement de la programmation orientée objet (C++, C#), mathématiques appliquées, développement web full-stack (PHP/MySQL) et bases de données.",
     note: "1ère année : module E-business à repasser",
-    noteColor: "#ffb300",
+    noteColor: "#e3b341",
     tags: ["C#", "C++", "PHP", "MySQL", "HTML/CSS", "Algorithmique"],
-    color: "#00ff41",
+    color: "#58a6ff",
     statut: "EN COURS",
   },
   {
@@ -20,9 +20,9 @@ const PARCOURS = [
     lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6233-technicien-en-bureautique-2.html",
     desc: "Formation en bureautique couvrant la gestion administrative, les outils Office, la comptabilité de base et la communication professionnelle.",
     note: "3 modules à repasser · Stage · TFE restants",
-    noteColor: "#ffb300",
+    noteColor: "#e3b341",
     tags: ["Bureautique", "Office", "Administration", "Comptabilité"],
-    color: "#00ffff",
+    color: "#a371f7",
     statut: "EN COURS",
   },
 ];
@@ -34,16 +34,16 @@ export default function AboutSection() {
       {/* Présentation du site */}
       <div style={{ marginBottom: "4rem" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem" }}>
-          <h2 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1rem", fontWeight: 700, color: "#00ff41", margin: 0, letterSpacing: "0.2em" }}>
+          <h2 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1rem", fontWeight: 700, color: "#58a6ff", margin: 0, letterSpacing: "0.2em" }}>
             // À PROPOS DU SITE
           </h2>
-          <div style={{ flex: 1, height: "1px", background: "#1a2332" }} />
+          <div style={{ flex: 1, height: "1px", background: "#21262d" }} />
         </div>
 
         <div
           style={{
-            background: "rgba(13,17,23,0.8)",
-            border: "1px solid #1a2332",
+            background: "rgba(22,27,34,0.8)",
+            border: "1px solid #21262d",
             padding: "1.5rem 2rem",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
@@ -56,9 +56,9 @@ export default function AboutSection() {
             { icon: "∑", titre: "Progression visible", desc: "Les projets sont datés et classés par difficulté, reflétant la progression réelle tout au long du bachelier en informatique." },
           ].map(({ icon, titre, desc }) => (
             <div key={titre} style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              <div style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1.2rem", color: "#00ff41" }}>{icon}</div>
-              <div style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "0.8rem", color: "#00ff41", fontWeight: 700 }}>{titre}</div>
-              <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.78rem", color: "#00ff4199", lineHeight: 1.7, margin: 0 }}>{desc}</p>
+              <div style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1.2rem", color: "#58a6ff" }}>{icon}</div>
+              <div style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "0.8rem", color: "#58a6ff", fontWeight: 700 }}>{titre}</div>
+              <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.78rem", color: "#58a6ffbb", lineHeight: 1.7, margin: 0 }}>{desc}</p>
             </div>
           ))}
         </div>
@@ -67,10 +67,10 @@ export default function AboutSection() {
       {/* Parcours */}
       <div>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem" }}>
-          <h2 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1rem", fontWeight: 700, color: "#00ff41", margin: 0, letterSpacing: "0.2em" }}>
+          <h2 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "1rem", fontWeight: 700, color: "#58a6ff", margin: 0, letterSpacing: "0.2em" }}>
             // MON PARCOURS
           </h2>
-          <div style={{ flex: 1, height: "1px", background: "#1a2332" }} />
+          <div style={{ flex: 1, height: "1px", background: "#21262d" }} />
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
@@ -95,12 +95,12 @@ export default function AboutSection() {
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div style={{ width: 10, height: 10, background: item.color, boxShadow: `0 0 8px ${item.color}`, flexShrink: 0 }} />
                 {i < PARCOURS.length - 1 && (
-                  <div style={{ width: 1, flex: 1, background: "#1a2332", marginTop: 4 }} />
+                  <div style={{ width: 1, flex: 1, background: "#21262d", marginTop: 4 }} />
                 )}
               </div>
 
               {/* Contenu */}
-              <div style={{ background: "rgba(13,17,23,0.6)", border: `1px solid ${item.color}33`, padding: "1rem 1.25rem" }}>
+              <div style={{ background: "rgba(22,27,34,0.6)", border: `1px solid ${item.color}33`, padding: "1rem 1.25rem" }}>
 
                 {/* Titre + statut */}
                 <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "0.5rem", marginBottom: "0.25rem" }}>
@@ -123,7 +123,7 @@ export default function AboutSection() {
                 </a>
 
                 {/* Description */}
-                <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.78rem", color: "#00ff4199", lineHeight: 1.7, margin: "0 0 0.75rem" }}>
+                <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.78rem", color: "#58a6ffbb", lineHeight: 1.7, margin: "0 0 0.75rem" }}>
                   {item.desc}
                 </p>
 
@@ -155,9 +155,9 @@ export default function AboutSection() {
             fontSize: "0.85rem",
             fontWeight: 700,
             letterSpacing: "0.15em",
-            color: "#00ff41",
-            border: "1px solid #00ff41",
-            boxShadow: "0 0 10px #00ff4166",
+            color: "#58a6ff",
+            border: "1px solid #58a6ff",
+            boxShadow: "0 0 10px #58a6ff88",
             padding: "0.75rem 2.5rem",
             textDecoration: "none",
             display: "inline-block",

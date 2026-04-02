@@ -7,34 +7,34 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: "1px solid #1a2332",
+        borderTop: "1px solid #21262d",
         padding: "1.5rem",
         textAlign: "center",
         fontFamily: '"Share Tech Mono", monospace',
         fontSize: "0.75rem",
-        color: "#00ff4166",
+        color: "#58a6ff88",
       }}
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
         <div>
-          <span style={{ color: "#00ff41" }}>{total}</span> projets indexés
+          <span style={{ color: "#58a6ff" }}>{total}</span> projets indexés
           &nbsp;|&nbsp;
-          <span style={{ color: "#00ffff" }}>C#</span>
+          <span style={{ color: "#a371f7" }}>C#</span>
           &nbsp;·&nbsp;
-          <span style={{ color: "#ff0040" }}>C++</span>
+          <span style={{ color: "#f85149" }}>C++</span>
           &nbsp;·&nbsp;
-          <span style={{ color: "#0080ff" }}>HTML/CSS</span>
+          <span style={{ color: "#79c0ff" }}>HTML/CSS</span>
           &nbsp;·&nbsp;
-          <span style={{ color: "#bf00ff" }}>PHP</span>
+          <span style={{ color: "#f78166" }}>PHP</span>
           &nbsp;·&nbsp;
-          <span style={{ color: "#00ffff" }}>SQL</span>
+          <span style={{ color: "#a371f7" }}>SQL</span>
         </div>
-        <div style={{ color: "#1a2332" }}>
+        <div style={{ color: "#21262d" }}>
           ─────────────────────────────────────────
         </div>
         <div>
           © {year} &nbsp;
-          <span style={{ color: "#00ff41" }}>Nicolas Terroir</span>
+          <span style={{ color: "#58a6ff" }}>Nicolas Terroir</span>
           &nbsp;—&nbsp; Bachelier en Informatique
         </div>
       </div>

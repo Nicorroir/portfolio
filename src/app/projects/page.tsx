@@ -17,8 +17,8 @@ export default function ProjectsPage() {
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "clamp(1.2rem, 3vw, 1.8rem)",
             fontWeight: 900,
-            color: "#00ff41",
-            textShadow: "0 0 15px #00ff4166",
+            color: "#58a6ff",
+            textShadow: "0 0 15px #58a6ff88",
             margin: "0 0 0.5rem",
             letterSpacing: "0.15em",
           }}
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
         <p style={{
           fontFamily: '"Share Tech Mono", monospace',
           fontSize: "0.8rem",
-          color: "#00ff4166",
+          color: "#58a6ff88",
           margin: 0,
         }}>
           {projects.length} projets réalisés durant le bachelier en informatique

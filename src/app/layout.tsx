@@ -42,7 +42,7 @@ export default function RootLayout({
           minHeight: "100vh",
           display: "flex",
           flexDirection: "column",
-          background: "#0a0a0a",
+          background: "#0d1117",
         }}
       >
         <MatrixBackground />

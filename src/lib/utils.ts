@@ -12,7 +12,7 @@ export function slugify(text: string): string {
 
 /** Retourne la couleur hex associée à un langage */
 export function getLangColor(lang: Language): string {
-  return LANGUAGE_COLORS[lang] ?? "#00ff41";
+  return LANGUAGE_COLORS[lang] ?? "#58a6ff";
 }
 
 /** Retourne le label de difficulté formaté */
@@ -23,9 +23,9 @@ export function getDifficultyLabel(d: Difficulty): string {
 /** Retourne la couleur de difficulté */
 export function getDifficultyColor(d: Difficulty): string {
   switch (d) {
-    case Difficulty.DEBUTANT:      return "#00ff41";
-    case Difficulty.INTERMEDIAIRE: return "#ffb300";
-    case Difficulty.AVANCE:        return "#ff0040";
+    case Difficulty.DEBUTANT:      return "#58a6ff";
+    case Difficulty.INTERMEDIAIRE: return "#e3b341";
+    case Difficulty.AVANCE:        return "#f85149";
   }
 }
 

@@ -11,12 +11,12 @@ interface NeonBorderProps {
 }
 
 const COLORS: Record<NeonColor, { border: string; shadow: string }> = {
-  green:  { border: "#00ff41", shadow: "0 0 8px #00ff41, 0 0 16px #00ff4166" },
-  cyan:   { border: "#00ffff", shadow: "0 0 8px #00ffff, 0 0 16px #00ffff66" },
-  purple: { border: "#bf00ff", shadow: "0 0 8px #bf00ff, 0 0 16px #bf00ff66" },
-  amber:  { border: "#ffb300", shadow: "0 0 8px #ffb300, 0 0 16px #ffb30066" },
-  red:    { border: "#ff0040", shadow: "0 0 8px #ff0040, 0 0 16px #ff004066" },
-  blue:   { border: "#0080ff", shadow: "0 0 8px #0080ff, 0 0 16px #0080ff66" },
+  green:  { border: "#58a6ff", shadow: "0 0 8px #58a6ff, 0 0 16px #58a6ff88" },
+  cyan:   { border: "#a371f7", shadow: "0 0 8px #a371f7, 0 0 16px #a371f766" },
+  purple: { border: "#f78166", shadow: "0 0 8px #f78166, 0 0 16px #f7816666" },
+  amber:  { border: "#e3b341", shadow: "0 0 8px #e3b341, 0 0 16px #e3b34166" },
+  red:    { border: "#f85149", shadow: "0 0 8px #f85149, 0 0 16px #f8514966" },
+  blue:   { border: "#79c0ff", shadow: "0 0 8px #79c0ff, 0 0 16px #79c0ff66" },
 };
 
 export default function NeonBorder({

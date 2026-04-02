@@ -18,8 +18,8 @@ export default function Navbar() {
         position: "sticky",
         top: 0,
         zIndex: 50,
-        borderBottom: "1px solid #1a2332",
-        background: "rgba(10,10,10,0.85)",
+        borderBottom: "1px solid #21262d",
+        background: "rgba(22,27,34,0.85)",
         backdropFilter: "blur(8px)",
       }}
     >
@@ -41,8 +41,8 @@ export default function Navbar() {
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "1rem",
             fontWeight: 700,
-            color: "#00ff41",
-            textShadow: "0 0 10px #00ff41",
+            color: "#58a6ff",
+            textShadow: "0 0 10px #58a6ff",
             letterSpacing: "0.15em",
             textDecoration: "none",
             whiteSpace: "nowrap",
@@ -64,9 +64,9 @@ export default function Navbar() {
                   fontSize: "0.8rem",
                   letterSpacing: "0.08em",
                   padding: "0.35rem 0.9rem",
-                  background: isActive ? "#00ff4122" : "transparent",
-                  border: `1px solid ${isActive ? "#00ff41" : "transparent"}`,
-                  color: isActive ? "#00ff41" : "#00ff4188",
+                  background: isActive ? "#58a6ff22" : "transparent",
+                  border: `1px solid ${isActive ? "#58a6ff" : "transparent"}`,
+                  color: isActive ? "#58a6ff" : "#58a6ff99",
                   textDecoration: "none",
                   display: "flex",
                   alignItems: "center",
@@ -75,13 +75,13 @@ export default function Navbar() {
                 }}
                 onMouseEnter={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.color = "#00ff41";
-                    e.currentTarget.style.borderColor = "#00ff4144";
+                    e.currentTarget.style.color = "#58a6ff";
+                    e.currentTarget.style.borderColor = "#58a6ff55";
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.color = "#00ff4188";
+                    e.currentTarget.style.color = "#58a6ff99";
                     e.currentTarget.style.borderColor = "transparent";
                   }
                 }}

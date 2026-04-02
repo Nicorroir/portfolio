@@ -11,7 +11,7 @@ export default function BackButton() {
       style={{
         fontFamily: '"Share Tech Mono", monospace',
         fontSize: "0.75rem",
-        color: "#00ff4166",
+        color: "#58a6ff88",
         background: "none",
         border: "none",
         cursor: "pointer",
@@ -22,8 +22,8 @@ export default function BackButton() {
         gap: "0.4rem",
         transition: "color 0.2s",
       }}
-      onMouseEnter={(e) => (e.currentTarget.style.color = "#00ff41")}
-      onMouseLeave={(e) => (e.currentTarget.style.color = "#00ff4166")}
+      onMouseEnter={(e) => (e.currentTarget.style.color = "#58a6ff")}
+      onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff88")}
     >
       ← retour aux projets
     </button>

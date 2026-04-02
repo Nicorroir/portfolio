@@ -22,23 +22,23 @@ export default function IframeViewer({ config, title }: IframeViewerProps) {
           gap: "0.5rem",
           padding: "0.4rem 0.75rem",
           background: "#0d1117",
-          borderBottom: "1px solid #1a2332",
+          borderBottom: "1px solid #21262d",
           flexShrink: 0,
         }}
       >
         <div style={{ display: "flex", gap: "0.3rem" }}>
-          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ff0040", display: "inline-block" }} />
-          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ffb300", display: "inline-block" }} />
-          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#00ff41", display: "inline-block" }} />
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#f85149", display: "inline-block" }} />
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#e3b341", display: "inline-block" }} />
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#58a6ff", display: "inline-block" }} />
         </div>
         <div
           style={{
             flex: 1,
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.7rem",
-            color: "#00ff4166",
-            background: "#0a0a0a",
-            border: "1px solid #1a2332",
+            color: "#58a6ff88",
+            background: "#0d1117",
+            border: "1px solid #21262d",
             padding: "0.15rem 0.5rem",
             overflow: "hidden",
             textOverflow: "ellipsis",
@@ -65,7 +65,7 @@ export default function IframeViewer({ config, title }: IframeViewerProps) {
               background: "#0d1117",
               fontFamily: '"Share Tech Mono", monospace',
               fontSize: "0.8rem",
-              color: "#00ff4166",
+              color: "#58a6ff88",
             }}
           >
             <LoadingSpinner size={12} />

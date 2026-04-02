@@ -19,7 +19,7 @@ export default function ProjectGallery() {
           gap: "1rem",
           marginBottom: "0.5rem",
           paddingBottom: "1rem",
-          borderBottom: "1px solid #1a2332",
+          borderBottom: "1px solid #21262d",
         }}
       >
         <h2
@@ -27,14 +27,14 @@ export default function ProjectGallery() {
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "1rem",
             fontWeight: 700,
-            color: "#00ff41",
+            color: "#58a6ff",
             margin: 0,
             letterSpacing: "0.2em",
           }}
         >
           // PROJETS
         </h2>
-        <div style={{ flex: 1, height: "1px", background: "#1a2332" }} />
+        <div style={{ flex: 1, height: "1px", background: "#21262d" }} />
       </div>
 
       {/* Filtres */}
@@ -67,7 +67,7 @@ export default function ProjectGallery() {
                 textAlign: "center",
                 padding: "4rem 1rem",
                 fontFamily: '"Share Tech Mono", monospace',
-                color: "#00ff4144",
+                color: "#58a6ff55",
                 fontSize: "0.875rem",
               }}
             >
@@ -78,7 +78,7 @@ export default function ProjectGallery() {
                 <button
                   onClick={() => window.location.reload()}
                   style={{
-                    color: "#00ff41",
+                    color: "#58a6ff",
                     background: "none",
                     border: "none",
                     cursor: "pointer",

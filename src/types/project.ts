@@ -76,13 +76,13 @@ export interface Project {
 // ===== HELPERS =====
 
 export const LANGUAGE_COLORS: Record<Language, string> = {
-  [Language.CSHARP]:     "#00ff41", // vert matrix
-  [Language.CPP]:        "#ff0040", // rouge
-  [Language.HTML_CSS]:   "#0080ff", // bleu
-  [Language.JAVASCRIPT]: "#ffb300", // amber
-  [Language.PHP]:        "#bf00ff", // purple
-  [Language.SQL]:        "#00ffff", // cyan
-  [Language.TYPESCRIPT]: "#0080ff", // bleu
+  [Language.CSHARP]:     "#58a6ff", // vert matrix
+  [Language.CPP]:        "#f85149", // rouge
+  [Language.HTML_CSS]:   "#79c0ff", // bleu
+  [Language.JAVASCRIPT]: "#e3b341", // amber
+  [Language.PHP]:        "#f78166", // purple
+  [Language.SQL]:        "#a371f7", // cyan
+  [Language.TYPESCRIPT]: "#79c0ff", // bleu
 };
 
 export const CATEGORY_ICONS: Record<Category, string> = {

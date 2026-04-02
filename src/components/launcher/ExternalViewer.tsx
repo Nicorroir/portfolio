@@ -23,8 +23,8 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
         style={{
           fontFamily: '"Orbitron", sans-serif',
           fontSize: "3rem",
-          color: "#bf00ff",
-          textShadow: "0 0 20px #bf00ff",
+          color: "#f78166",
+          textShadow: "0 0 20px #f78166",
         }}
       >
         ↗
@@ -35,7 +35,7 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.8rem",
-            color: "#00ff4166",
+            color: "#58a6ff88",
             marginBottom: "0.5rem",
           }}
         >
@@ -45,7 +45,7 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
           style={{
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "0.9rem",
-            color: "#00ff41",
+            color: "#58a6ff",
           }}
         >
           {title}
@@ -65,15 +65,15 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
               gap: "0.5rem",
               fontFamily: '"Share Tech Mono", monospace',
               fontSize: "0.85rem",
-              color: "#00ff41",
-              border: "1px solid #00ff41",
+              color: "#58a6ff",
+              border: "1px solid #58a6ff",
               padding: "0.6rem 1.5rem",
               textDecoration: "none",
               transition: "all 0.2s",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#00ff4122";
-              e.currentTarget.style.boxShadow = "0 0 12px #00ff4166";
+              e.currentTarget.style.background = "#58a6ff22";
+              e.currentTarget.style.boxShadow = "0 0 12px #58a6ff88";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = "transparent";
@@ -87,8 +87,8 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
             style={{
               fontFamily: '"Share Tech Mono", monospace',
               fontSize: "0.75rem",
-              color: "#00ff4133",
-              border: "1px solid #1a2332",
+              color: "#58a6ff33",
+              border: "1px solid #21262d",
               padding: "0.6rem 1.5rem",
             }}
           >
@@ -108,8 +108,8 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
               gap: "0.5rem",
               fontFamily: '"Share Tech Mono", monospace',
               fontSize: "0.85rem",
-              color: "#00ffff",
-              border: "1px solid #00ffff",
+              color: "#a371f7",
+              border: "1px solid #a371f7",
               padding: "0.6rem 1.5rem",
               textDecoration: "none",
               transition: "all 0.2s",
@@ -131,8 +131,8 @@ export default function ExternalViewer({ config, title }: ExternalViewerProps) {
               gap: "0.5rem",
               fontFamily: '"Share Tech Mono", monospace',
               fontSize: "0.85rem",
-              color: "#bf00ff",
-              border: "1px solid #bf00ff",
+              color: "#f78166",
+              border: "1px solid #f78166",
               padding: "0.6rem 1.5rem",
               textDecoration: "none",
               transition: "all 0.2s",

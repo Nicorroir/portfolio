@@ -14,9 +14,9 @@ const LAUNCH_LABELS: Record<LaunchMode, string> = {
 };
 
 const LAUNCH_COLORS: Record<LaunchMode, string> = {
-  [LaunchMode.IFRAME]:    "#00ff41",
-  [LaunchMode.TERMINAL]:  "#00ffff",
-  [LaunchMode.EXTERNAL]:  "#bf00ff",
+  [LaunchMode.IFRAME]:    "#58a6ff",
+  [LaunchMode.TERMINAL]:  "#a371f7",
+  [LaunchMode.EXTERNAL]:  "#f78166",
 };
 
 interface ProjectCardProps {
@@ -38,8 +38,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       transition={{ duration: 0.2 }}
       whileHover={{ y: -4 }}
       style={{
-        background: "rgba(13,17,23,0.85)",
-        border: "1px solid #1a2332",
+        background: "rgba(22,27,34,0.85)",
+        border: "1px solid #21262d",
         display: "flex",
         flexDirection: "column",
         cursor: "pointer",
@@ -49,7 +49,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       }}
       onHoverStart={(e) => {
         (e.target as HTMLElement).closest?.("[data-card]") &&
-          ((e.target as HTMLElement).style.borderColor = "#00ff4166");
+          ((e.target as HTMLElement).style.borderColor = "#58a6ff88");
       }}
       onClick={() => router.push(`/projects/${project.id}`)}
       data-card
@@ -63,10 +63,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             right: "0.6rem",
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.6rem",
-            color: "#ffb300",
-            border: "1px solid #ffb30066",
+            color: "#e3b341",
+            border: "1px solid #e3b34166",
             padding: "0.1rem 0.4rem",
-            background: "rgba(10,10,10,0.9)",
+            background: "rgba(22,27,34,0.9)",
             zIndex: 1,
           }}
         >
@@ -79,7 +79,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         style={{
           height: "140px",
           background: `linear-gradient(135deg, #0d1117 0%, ${LANGUAGE_COLORS[project.languages[0]]}11 100%)`,
-          borderBottom: "1px solid #1a2332",
+          borderBottom: "1px solid #21262d",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -96,7 +96,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {/* Catégorie + date */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <CategoryBadge category={project.category} />
-          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#00ff4144" }}>
+          <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: "#58a6ff55" }}>
             {formatDate(project.date)}
           </span>
         </div>
@@ -107,7 +107,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             fontFamily: '"Orbitron", sans-serif',
             fontSize: "0.9rem",
             fontWeight: 700,
-            color: "#00ff41",
+            color: "#58a6ff",
             margin: 0,
             lineHeight: 1.3,
           }}
@@ -120,7 +120,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           style={{
             fontFamily: '"Share Tech Mono", monospace',
             fontSize: "0.75rem",
-            color: "#00ff4199",
+            color: "#58a6ffbb",
             margin: 0,
             lineHeight: 1.6,
             flex: 1,
@@ -146,7 +146,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            borderTop: "1px solid #1a2332",
+            borderTop: "1px solid #21262d",
             paddingTop: "0.6rem",
             marginTop: "0.2rem",
           }}

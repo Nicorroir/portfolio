@@ -10,21 +10,21 @@ interface CyberButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const VARIANTS = {
   primary: {
-    border: "#00ff41",
-    color:  "#00ff41",
-    shadow: "0 0 8px #00ff41, 0 0 16px #00ff4166",
+    border: "#58a6ff",
+    color:  "#58a6ff",
+    shadow: "0 0 8px #58a6ff, 0 0 16px #58a6ff88",
     hover:  "rgba(0,255,65,0.1)",
   },
   ghost: {
-    border: "#1a2332",
-    color:  "#00ff4199",
+    border: "#21262d",
+    color:  "#58a6ffbb",
     shadow: "none",
     hover:  "rgba(0,255,65,0.05)",
   },
   danger: {
-    border: "#ff0040",
-    color:  "#ff0040",
-    shadow: "0 0 8px #ff0040, 0 0 16px #ff004066",
+    border: "#f85149",
+    color:  "#f85149",
+    shadow: "0 0 8px #f85149, 0 0 16px #f8514966",
     hover:  "rgba(255,0,64,0.1)",
   },
 };
