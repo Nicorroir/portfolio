@@ -48,7 +48,7 @@ export default function ContactPage() {
 
           {[
             { label: "Étudiant", value: "Bachelier en Informatique", color: "#00ff41" },
-            { label: "École", value: "IPAMC — Écaussines", color: "#00ffff" },
+            { label: "École", value: "IPAMC — Écaussinnes", color: "#00ffff" },
             { label: "Email école", value: "nicolas.terroir@hainaut-ea.be", color: "#00ff41", isEmail: true },
             { label: "Email perso", value: "Primo-nt@hotmail.com", color: "#00ff41", isEmail: true },
             { label: "Email perso 2", value: "nterroir@gmail.com", color: "#00ff41", isEmail: true },
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </span>
           </div>
           <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.75rem", color: "#00ff4199", lineHeight: 1.7, margin: 0 }}>
-            Étudiant en bachelier informatique à l&apos;IPAMC (Écaussines), ouvert aux stages, projets collaboratifs et opportunités professionnelles.
+            Étudiant en bachelier informatique à l&apos;IPAMC (Écaussinnes), ouvert aux stages, projets collaboratifs et opportunités professionnelles.
           </p>
           <div style={{ marginTop: "auto" }}>
             {["Stage", "Projet collaboratif", "Freelance"].map((tag) => (

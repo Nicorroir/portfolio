@@ -4,7 +4,7 @@ const PARCOURS = [
   {
     periode: "En cours",
     titre: "Bachelier en Informatique — 2ème année",
-    soustitre: "IPAMC — Écaussines",
+    soustitre: "IPAMC — Écaussinnes",
     lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6242-bac-en-informatique-nouvelle-formule-2.html",
     desc: "2ème année du bachelier en informatique. Approfondissement de la programmation orientée objet (C++, C#), mathématiques appliquées, développement web full-stack (PHP/MySQL) et bases de données.",
     note: "1ère année : module E-business à repasser",
@@ -16,7 +16,7 @@ const PARCOURS = [
   {
     periode: "En cours",
     titre: "Technicien en Bureautique",
-    soustitre: "IPAMC — Écaussines",
+    soustitre: "IPAMC — Écaussinnes",
     lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6233-technicien-en-bureautique-2.html",
     desc: "Formation en bureautique couvrant la gestion administrative, les outils Office, la comptabilité de base et la communication professionnelle.",
     note: "3 modules à repasser · Stage · TFE restants",
