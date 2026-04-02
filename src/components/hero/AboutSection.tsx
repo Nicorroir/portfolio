@@ -2,32 +2,28 @@ import Link from "next/link";
 
 const PARCOURS = [
   {
-    periode: "2023 — 2024",
-    titre: "Découverte de la programmation",
-    desc: "Premiers pas en C# avec l'algorithmique procédurale (PAP). Apprentissage des bases : variables, conditions, boucles, fonctions, tableaux.",
-    tags: ["C#", "Algorithmique", "Console"],
+    periode: "En cours",
+    titre: "Bachelier en Informatique — 2ème année",
+    soustitre: "IPAMC — Écaussines",
+    lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6242-bac-en-informatique-nouvelle-formule-2.html",
+    desc: "2ème année du bachelier en informatique. Approfondissement de la programmation orientée objet (C++, C#), mathématiques appliquées, développement web full-stack (PHP/MySQL) et bases de données.",
+    note: "1ère année : module E-business à repasser",
+    noteColor: "#ffb300",
+    tags: ["C#", "C++", "PHP", "MySQL", "HTML/CSS", "Algorithmique"],
     color: "#00ff41",
+    statut: "EN COURS",
   },
   {
-    periode: "2024 — 2025",
-    titre: "Programmation Orientée Objet",
-    desc: "Transition vers le C++ et les concepts avancés : classes, héritage, polymorphisme, encapsulation. Projets de simulation et de gestion.",
-    tags: ["C++", "C#", "POO", "Héritage"],
+    periode: "En cours",
+    titre: "Technicien en Bureautique",
+    soustitre: "IPAMC — Écaussines",
+    lien: "https://www.etudierenhainaut.be/ipamc/pages/formations/6233-technicien-en-bureautique-2.html",
+    desc: "Formation en bureautique couvrant la gestion administrative, les outils Office, la comptabilité de base et la communication professionnelle.",
+    note: "3 modules à repasser · Stage · TFE restants",
+    noteColor: "#ffb300",
+    tags: ["Bureautique", "Office", "Administration", "Comptabilité"],
     color: "#00ffff",
-  },
-  {
-    periode: "2024 — 2025",
-    titre: "Mathématiques & Algorithmique avancée",
-    desc: "Algèbre linéaire, matrices, systèmes d'équations. Implémentation de l'algorithme hongrois pour l'optimisation combinatoire.",
-    tags: ["C#", "Matrices", "LUP", "Optimisation"],
-    color: "#bf00ff",
-  },
-  {
-    periode: "2025",
-    titre: "Développement Web Full-Stack",
-    desc: "HTML, CSS, JavaScript côté frontend. PHP et MySQL côté backend. Création de sites dynamiques avec formulaires et bases de données.",
-    tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
-    color: "#0080ff",
+    statut: "EN COURS",
   },
 ];
 
@@ -104,13 +100,39 @@ export default function AboutSection() {
               </div>
 
               {/* Contenu */}
-              <div style={{ background: "rgba(13,17,23,0.6)", border: `1px solid ${item.color}33`, padding: "1rem 1.25rem", marginBottom: i < PARCOURS.length - 1 ? "0" : "0" }}>
-                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "0.85rem", color: item.color, margin: "0 0 0.5rem", fontWeight: 700 }}>
-                  {item.titre}
-                </h3>
+              <div style={{ background: "rgba(13,17,23,0.6)", border: `1px solid ${item.color}33`, padding: "1rem 1.25rem" }}>
+
+                {/* Titre + statut */}
+                <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "0.5rem", marginBottom: "0.25rem" }}>
+                  <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: "0.85rem", color: item.color, margin: 0, fontWeight: 700 }}>
+                    {item.titre}
+                  </h3>
+                  <span style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.6rem", color: item.color, border: `1px solid ${item.color}66`, padding: "0.1rem 0.4rem", whiteSpace: "nowrap", flexShrink: 0 }}>
+                    {item.statut}
+                  </span>
+                </div>
+
+                {/* Sous-titre avec lien */}
+                <a
+                  href={item.lien}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: `${item.color}88`, textDecoration: "none", display: "inline-block", marginBottom: "0.75rem" }}
+                >
+                  ↗ {item.soustitre}
+                </a>
+
+                {/* Description */}
                 <p style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.78rem", color: "#00ff4199", lineHeight: 1.7, margin: "0 0 0.75rem" }}>
                   {item.desc}
                 </p>
+
+                {/* Note (modules ratés, stage, etc.) */}
+                <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: item.noteColor, border: `1px solid ${item.noteColor}44`, padding: "0.3rem 0.6rem", marginBottom: "0.75rem", display: "inline-block" }}>
+                  ⚠ {item.note}
+                </div>
+
+                {/* Tags */}
                 <div style={{ display: "flex", gap: "0.3rem", flexWrap: "wrap" }}>
                   {item.tags.map((tag) => (
                     <span key={tag} style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.65rem", color: item.color, border: `1px solid ${item.color}44`, padding: "0.1rem 0.4rem" }}>
