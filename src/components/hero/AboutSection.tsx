@@ -127,11 +127,6 @@ export default function AboutSection() {
                   {item.desc}
                 </p>
 
-                {/* Note (modules ratés, stage, etc.) */}
-                <div style={{ fontFamily: '"Share Tech Mono", monospace', fontSize: "0.7rem", color: item.noteColor, border: `1px solid ${item.noteColor}44`, padding: "0.3rem 0.6rem", marginBottom: "0.75rem", display: "inline-block" }}>
-                  ⚠ {item.note}
-                </div>
-
                 {/* Tags */}
                 <div style={{ display: "flex", gap: "0.3rem", flexWrap: "wrap" }}>
                   {item.tags.map((tag) => (
